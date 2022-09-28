@@ -1,7 +1,7 @@
 :root {
   --primary-text-color: #22343d;
   --secondary-text-color: #ffffff;
-  --accent-text-color: #02897a;
+  --accent-color: #02897a;
   --font-accent: 'Montserrat', sans-serif;
 }
 
@@ -128,11 +128,33 @@ button {
 
 /* strategies */
 
+.strategies-title {
+  margin-bottom: 10px;
+}
+
 .strategies-description {
   width: 470px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+
+  margin-bottom: 40px;
+}
+
+.strategies-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.strategies-item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  outline: 1px solid #dedede;
+  border-radius: 8px;
+}
+
+.strategies-item-text {
+  margin-bottom: 12px;
 }
 
 .strategies-item-bold-text {
@@ -144,6 +166,14 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.67;
+}
+
+.strategies-wrapper {
+  padding: 24px 27px 40px 27px;
+}
+
+.title-green-accent {
+  color: var(--accent-color);
 }
 
 /* price */
@@ -166,7 +196,7 @@ button {
   font-size: 76px;
   line-height: 1.32;
   letter-spacing: 0.02em;
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .currency {
@@ -175,7 +205,7 @@ button {
   font-size: 24px;
   line-height: 1.25;
   letter-spacing: 0.01em;
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .period {
@@ -202,5 +232,5 @@ button {
   width: 139px;
   height: 44px;
   color: var(--secondary-text-color);
-  background-color: #02897a;
+  background-color: var(--accent-color);
 }
